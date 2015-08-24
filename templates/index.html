@@ -1,0 +1,15 @@
+<!doctype html>
+<title>Chester the Love Robot</title>
+<center>
+<div id=love>
+<img src="{{ url_for('static', filename='chester.png') }}">
+<h1>LOVE AND APPRECIATE</h1>
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    {{ form.to.label }} {{ form.to() }}</br>
+    {{ form.message.label }} {{ form.message() }}</br>
+    {{ form.fro.label }} {{ form.fro() }}</br>
+    <input type="submit" value="APPRECIATE">
+</form>
+</div>
+</center>
